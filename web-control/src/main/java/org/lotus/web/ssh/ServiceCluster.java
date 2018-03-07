@@ -5,10 +5,11 @@ import java.net.InetAddress;
 /**
  * Created by quanchengyun on 2018/3/7.
  */
-public class Connector {
+public class ServiceCluster {
 
-    private InetAddress[]  hostList;
+    private InetAddress[]  nodes;
 
+    private String resourceLimit;
 
 
 
