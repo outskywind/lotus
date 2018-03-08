@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sdk/client jar test</title>
+</head>
+<body>
+    <div class="attention">sdk/client jar 测试，spring boot 运行，服务提供方快速自测用</div>
+    <div>
+        <span>快速sdk client 接入单元测试场景如下：
+            服务提供方发布了sdk, 在 spring boot jar 运行中启动，直接运行测试
+            **原因 1. 不依赖于调用方实际发布，不想麻烦写一个spring boot 打包部署；直接在测试页面点击一下即可生成部署一个测试的
+                      spring boot 包装的jar包
+        </span>
+        <span>
+            需要解决的问题：如果是那种需要注解配置引入的sdk/client，比如 spring boot 的自动配置的client 怎么办
+            提供 unit test / bean test
+            1  unit test 直接测试不需注解配置成bean的类
+            2  bean test 提供 configuration 配置代码，和测试代码
+        </span>
+    </div>
+
+</body>
+</html>

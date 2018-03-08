@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lotus cluster management</title>
+</head>
+<body>
+<div>
+    <span>服务配置</span>
+    <hr/>
+    <div>zk集群</div>
+    <div>
+        <textarea rows='10' cols='20'></textarea>
+    </div>
+    <div>服务列表</div>
+    <div>
+        <li><a href="./monitor.html?service=xxx">s1</a></li>
+        <li><a href="./monitor.html?service=xxx">s2</a></li>
+    </div>
+    <div id="addService1" onclick="">添加服务
+        <div display="none">
+            <form>
+                服务名:<input  name="" id="service" type="text"/>
+                git仓库地址:<input name="" id="github_repo" type="text"/>
+                <div>cluster基本节点:<input name="" id="service_nodes" type="text">(*必须，按要求初始部署的节点不受弹性伸缩影响)</div>
+                <div>cluster弹性节点:<input name="" id="autoScacling_nodes" type="text">(*可选，用来进行服务实例自动弹性伸缩的节点)</div>
+                <div>启用实例自动故障恢复运行：是<input name="auto_fail_over" type="radio" value="1" checked="checked"> 否<input name="auto_fail_over" type="radio" value="0"></div>
+                <div><input type="button" value="提交"></div>
+                <hr/>
+                <div>
+                    <span>高级配置</span>
+                    <br/>
+                    <div>
+                        弹性伸缩策略：
+                        <div>
+                            <div>伸缩比例：1.5倍</div>
+                            伸缩时机：<div>cpu可用剩余: <input name="" id="cpu" type="text" value="">% 内存可用剩余: <input name="" id="mem" type="text" value="">% </div>
+                            磁盘IO占比: <input name="" id="disk" type="text" value="">% 网卡IO占比: <input name="" id="network" type="text" value="">%
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

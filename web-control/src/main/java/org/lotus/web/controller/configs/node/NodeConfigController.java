@@ -19,7 +19,7 @@ public class NodeConfigController {
      * @return
      */
     public String addServerNode(String nodeIp){
-
+        return  "";
     }
 
 }

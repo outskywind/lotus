@@ -2,11 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>lotus cluster management</title>
+
+    <style type="text/css">
+        th {
+            width: 160px;
+            float:left;
+         }
+        td {
+            width: 160px;
+            float:left;
+            text-align:center;
+         }
+         .opt {
+            width: 160px;
+            float:left;
+         }
+
+         .opt .btn {
+            width: 70px;
+            float:left;
+         }
+         .nav {
+            width: 60px;
+         }
+
+    </style>
+
 </head>
 <body>
     <div>
-        <span> 服务集群 </span>
+
+        <div>导航条
+            <span class="nav">zk配置</span>
+            <span class="nav">服务配置</span>
+            <span class="nav">服务部署</span>
+            <span class="nav">服务监控</span>
+            <span class="nav">服务接口测试</span>
+        </div>
+
+        <div>服务列表</div>
+        <!-- dubbo 服务有自带监控， spring boot curator 也有监控功能
+           看看最好是直接整合拿来稍微修改用 -->
+        <table>
+            <tr>
+                <th>服务</th>
+                <th>状态</th>
+                <th>运行节点</th>
+                <th>已分配资源总和</th>
+            </tr>
+            <tr>
+                <td>s1xxx</td>
+                <td>green</td>
+                <td><li>10.40.11.80:5670</li>
+                    <li>10.40.11.81:5670</li>
+                    <li>10.40.11.82:5670</li>
+                    <li>10.40.11.83:5670</li>
+                </td>
+                <td>cpu: ;mem: 7562M</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

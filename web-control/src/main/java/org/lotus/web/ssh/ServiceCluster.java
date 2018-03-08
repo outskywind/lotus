@@ -9,8 +9,6 @@ public class ServiceCluster {
 
     private InetAddress[]  nodes;
 
-    private String resourceLimit;
-
 
 
 
