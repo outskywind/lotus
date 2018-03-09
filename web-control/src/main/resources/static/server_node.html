@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加主机节点</title>
+</head>
+<body>
+    <div>
+        <div id='container'></div>
+    </div>
+
+
+    <script id='myTemplate' type='text/ractive'>
+        <div id="">
+        <span style="width:150px;float:left;">添加主机节点：</span>
+        <div><textarea rows='10' cols='20' id="nodes"></textarea></div>
+        <div>ssh user/password:<input type="text" value="" name="ssh_user"></div>
+        <button on-click="submit">ok 提交</button>
+        </div>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/ractive@0.9.13/ractive.min.js"></script>
+    <script type="text/javascript">
+    var ractive = Ractive({
+    target: output,
+    template: template,
+    data: {greeting:'Hello',name:'world'}
+    });
+    reactive.on({
+        submit: function(){
+        }
+    });
+</script>
+</body>
+</html>

@@ -5,5 +5,5 @@
    3. has the ability of service autoscaling
    4. resource limit and isolation
    5. the service resource performance monitoring and feedback [as 3rd target implies]
-   6. service node auto-failover handling
+   6. service node auto fail-over recovering
    7. service to service routing config
