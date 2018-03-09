@@ -10,8 +10,9 @@
    8. fast test with distributed jar running mode as a spring boot application
    
    the architecture is easy to extend or customize:
-   1. its based on spring boot
-   2. it divided as master-web-control and agent . Agent is responsible for invoke deployed jars
+   1. it's based on spring boot
+   2. it divided as master-web-control and agent , very like Apache YARN. 
+      Agent is responsible for invoke deployed jars
       application and ,all command and args is accepted from master-web-control node.
       Agent is also responsible for collect monitoring data and feedback to master node.
       Master will decide to auto-scaling with the Agent's feedback,or auto recover the node
@@ -19,7 +20,7 @@
    
    the ui:
         
-   Base js framework is ReactiveJs ,which programme is very like VueJs but is more easy
+   Base js framework is RactiveJs ,which programme is very like VueJs but is more easy
    to use within simple normal web project .  
    Simply speaking , it's easy to learn and simple to use . It support data binding.
    Its event model is easy to use than jquery.

@@ -10,7 +10,7 @@
     </div>
 
 
-    <script id='myTemplate' type='text/ractive'>
+    <script id='node' type='text/ractive'>
         <div id="">
         <span style="width:150px;float:left;">添加主机节点：</span>
         <div><textarea rows='10' cols='20' id="nodes"></textarea></div>
@@ -22,12 +22,13 @@
     <script src="https://cdn.jsdelivr.net/npm/ractive@0.9.13/ractive.min.js"></script>
     <script type="text/javascript">
     var ractive = Ractive({
-    target: output,
-    template: template,
+    target: '#container',
+    template: '#node',
     data: {greeting:'Hello',name:'world'}
     });
-    reactive.on({
+    ractive.on({
         submit: function(){
+        alert("ok");
         }
     });
 </script>
