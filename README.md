@@ -16,3 +16,12 @@
       Agent is also responsible for collect monitoring data and feedback to master node.
       Master will decide to auto-scaling with the Agent's feedback,or auto recover the node
       if needed.
+   
+   the ui:
+        
+   Base js framework is ReactiveJs ,which programme is very like VueJs but is more easy
+   to use within simple normal web project .  
+   Simply speaking , it's easy to learn and simple to use . It support data binding.
+   Its event model is easy to use than jquery.
+   it can integrate with any other js framework or libs.
+   
